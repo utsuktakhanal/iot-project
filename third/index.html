@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Users</title>
-    <style>
+    <!-- <style>
       body {
         font-family: "Times New Roman", Times, serif;
         text-align: center;
@@ -36,16 +37,30 @@
         background-color: blue;
       }
     </style>
+     -->
   </head>
   <body>
     <div class="container">
       <h1>Users</h1>
       <div class="btn-container">
-        <a href="add-users.html">Add Users</a>
-        <a href="remove-users.html">Remove Users</a>
+        <button onclick="showAddUser()">Add Users</button>
+        <button onclick="showRemoveUser()">Remove Users</button>
       </div>
-    </div> </br>
+      <div class="form-section" id="addUserSection">
+        <input type="text" id="firstName" placeholder="First Name" />
+        <input type="text" id="lastName" placeholder="Last Name" />
+        <button id="submitBtn" onclick="addUser()">Submit</button>
+      </div>
+      <div class="remove-section" id="removeUserSection">
+        <div class="user-list" id="userList"></div>
+        <button onclick="removeSelectedUsers()">Delete Selected</button>
+      </div>
+    </div>
+
+    <br />
     <h1>Livestream</h1>
     <button>Start Recording</button>
+
+    <script src="javascript.js"></script>
   </body>
 </html>

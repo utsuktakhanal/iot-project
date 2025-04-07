@@ -1,0 +1,59 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  margin: 50px;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.btn-container button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-container button:hover {
+  background-color: darkblue;
+}
+
+.form-section,
+.remove-section {
+  display: none;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  margin: 5px;
+  width: 40%;
+}
+
+.user-list {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.user-list label {
+  display: block;
+  margin: 5px 0;
+}
+
+.user-list input[type="checkbox"] {
+  margin-right: 10px;
+}
